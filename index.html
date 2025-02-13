@@ -1,2 +1,149 @@
 <!-- AN HTML COMMENT -->
- 
+ <html>
+        <head>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+            
+            html, body {
+            height: 100%; /* Ensures the page takes full height */
+            width: 100%;
+            }
+
+
+            .List {
+                width: 371px; /* Keeps original width */
+                height: 451px; /* Keeps original height */
+                border-radius: 4px;
+                background: #ffffff;
+                display: grid;
+                grid-template-columns: repeat(3, 101px); /* Ensures exactly 3 Polaroids per row */
+                grid-template-rows: auto;
+                column-gap: 20px; /* EXACT 20px gap between columns */
+                row-gap: 38px; /* EXACT 38px gap between rows */
+                padding: 17px 7px; /* 46px from the top, 64px from the left and right */
+                align-content: start; /* Ensures rows align properly */
+                justify-content: center; /* Centers grid properly */
+            }
+
+            
+
+            .PolaroidCard 
+            {
+                width: 101px;
+                height: 161px;
+                background-color: #ffffff;
+                
+            }
+
+            .Polaroid {
+                
+                width: 101px;
+                height: 126px;
+                background: #ffffff;
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                overflow: hidden;
+                padding-top: 8px;
+                position: relative;
+                
+            }
+            
+            .PolaroidImg
+            {
+                width: 94px;
+                height: 103px;
+                aspect-ratio: 94/103;
+                object-fit: cover;   
+
+            }
+
+
+            .title 
+            {
+                color: #203B5F;
+                text-align: center;
+                font-family: Nunito;
+                font-size: 16px;
+                font-weight: 600;
+                bottom: 0; /* Forces title to be at the bottom */
+                margin-top: 8px;
+                white-space: nowrap;
+                display: flex;
+                justify-content: center; /* Horizontally centers the text */
+                align-items: center; /* Vertically centers the text */
+
+            }
+
+            .WarningLabel 
+            {
+                position: absolute;
+                top: 11px; /* Adjust top spacing */
+                left: 8px; /* Adjust left spacing */
+                width: 20px; /* Adjust size */
+                height: 20px; /* Adjust size */
+                object-fit: contain;
+             }
+
+        </style>    
+        
+        </head>
+        
+        <body>
+            <div class="List">
+                <div class="PolaroidCard">
+                    <div class="Polaroid">
+                            <img class="PolaroidImg" src="assets/deathCapImg.png" alt="Death Cap">
+                            <img class="WarningLabel" src="assets/ic_round-warning.png" alt="Warning">
+                    </div>
+                    <p class="title">Death Cap</p>
+                </div>
+
+                <div class="PolaroidCard">
+                    <div class="Polaroid">
+                            <img class="PolaroidImg" src="assets/paddystrawimg.png" alt="Paddy Straw">
+                        
+                    </div>
+                    <p class="title">Paddy Straw</p>
+                </div>
+
+                <div class="PolaroidCard">
+                    <div class="Polaroid">
+                            <img class="PolaroidImg" src="assets/destroyingangelimg.png" alt="destroyingangelimg">
+                            <img class="WarningLabel" src="assets/ic_round-warning.png" alt="Warning">
+                    </div>
+                    <p class="title">Destroying Angel</p>
+                </div>
+
+                <div class="PolaroidCard">
+                    <div class="Polaroid">
+                            <img class="PolaroidImg" src="assets/falsedeathimg.png" alt="falsedeathimg">
+                            <img class="WarningLabel" src="assets/ic_round-warning.png" alt="Warning">
+                    </div>
+                    <p class="title">False Death Cap</p>
+                </div>
+
+                <div class="PolaroidCard">
+                    <div class="Polaroid">
+                            <img class="PolaroidImg" src="assets/puffballimg.png" alt="puffballimg">
+                            
+                    </div>
+                    <p class="title">Puffball</p>
+                </div>
+
+            </div>      
+        </body>
+        
+ </html>
+
+ <!-- This is a comment
+  List
+    PolaroidCard
+        Polaroid
+        Title
+    PolaroidCard
+        Polaroid
+        Title
+
+ -->
